@@ -12,7 +12,7 @@
     "lint:fix": "prettier --write \"src/**/*.{ts,scss,html}\"",
     "clean": "rimraf coverage/ dist/ .angular/ .scully/",
     "build": "ng build",
-    "scully": "scully --removeStaticDist --scan",
+    "scully": "scully --RSD --np --scan",
     "scully:serve": "scully serve",
     "prerelease": "npm run build && npm run scully",
     "release": "docker build -f docker/Dockerfile -t angular13 ."
